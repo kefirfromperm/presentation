@@ -9,3 +9,11 @@ out/
 .settings
 .classpath
 
+logs/
+project/project
+target/
+tmp/
+.history/
+dist/
+.idea_modules/
+RUNNING_PID/
