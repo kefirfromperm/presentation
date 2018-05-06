@@ -24,7 +24,6 @@ import ninja.application.ApplicationRoutes;
 import controllers.ApplicationController;
 
 public class Routes implements ApplicationRoutes {
-
     @Override
     public void init(Router router) {  
         
@@ -43,5 +42,4 @@ public class Routes implements ApplicationRoutes {
         ///////////////////////////////////////////////////////////////////////
         router.GET().route("/.*").with(ApplicationController::index);
     }
-
 }

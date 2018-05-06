@@ -40,25 +40,18 @@ import com.google.inject.Singleton;
 
 @Singleton
 public class ApplicationController {
-
     public Result index() {
-
         return Results.html();
-
     }
     
     public Result helloWorldJson() {
-        
         SimplePojo simplePojo = new SimplePojo();
         simplePojo.content = "Hello Ninja!";
 
         return Results.json().render(simplePojo);
-
     }
     
     public static class SimplePojo {
-
         public String content;
-        
     }
 }
