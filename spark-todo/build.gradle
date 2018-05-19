@@ -1,0 +1,22 @@
+group 'org.kefirsf'
+version '0.0.1-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile "com.sparkjava:spark-core:2.7.2"
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+    compile group: 'com.google.inject', name: 'guice', version: '4.1.0'
+    compile 'org.kefirsf:todo-core:1.0.0-SNAPSHOT'
+    compile 'com.google.code.gson:gson:2.8.4'
+}
+
+mainClassName = "org.kefirsf.spark.todo.Application"
